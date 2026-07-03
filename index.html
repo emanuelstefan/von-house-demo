@@ -223,11 +223,16 @@
     #vh-nav.scrolled #nav-logo-white,
     #vh-nav.scrolled #nav-logo-black{height:36px;}
 
-    /* Hero — ajustăm padding-ul de sus pentru logo-ul mai mic */
-    #acasa > div[style*="padding:110px"]{
+    /* Hero */
+    #hero-content{
       padding-top:90px !important;
       padding-bottom:80px !important;
+      align-items:flex-end !important;
     }
+    .slide-eyebrow{display:none !important;}
+    .slide-text h1{margin-bottom:18px !important;}
+    .slide-text p{margin-bottom:48px !important;}
+    .slide-text a[href]{margin-top:8px;}
 
     /* Despre — reflow: imagine deasupra textului */
     #vh-about-wrap{
@@ -348,10 +353,10 @@
   <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(38,24,13,0.34) 0%,rgba(38,24,13,0) 24%);pointer-events:none;"></div>
 
   <!-- Slide text content -->
-  <div style="position:absolute;inset:0;z-index:5;display:grid;align-items:center;padding:110px clamp(24px,6vw,104px) 128px;">
+  <div id="hero-content" style="position:absolute;inset:0;z-index:5;display:grid;align-items:center;padding:110px clamp(24px,6vw,104px) 128px;">
     <!-- Slide 1 -->
     <div class="slide-text active" id="slide-txt-0">
-      <div style="display:flex;align-items:center;gap:14px;margin-bottom:clamp(20px,3svh,30px);">
+      <div class="slide-eyebrow" style="display:flex;align-items:center;gap:14px;margin-bottom:clamp(20px,3svh,30px);">
         <span style="width:46px;height:1px;background:rgba(255,255,255,.75);"></span>
         <span style="font-family:'Jost',sans-serif;font-size:12px;letter-spacing:0.36em;text-transform:uppercase;color:#fff;text-shadow:0 1px 12px rgba(38,24,13,.5);">Interior · Arhitectură · Ceramică</span>
       </div>
@@ -361,7 +366,7 @@
     </div>
     <!-- Slide 2 -->
     <div class="slide-text inactive" id="slide-txt-1">
-      <div style="display:flex;align-items:center;gap:14px;margin-bottom:clamp(20px,3svh,30px);">
+      <div class="slide-eyebrow" style="display:flex;align-items:center;gap:14px;margin-bottom:clamp(20px,3svh,30px);">
         <span style="width:46px;height:1px;background:rgba(255,255,255,.75);"></span>
         <span style="font-family:'Jost',sans-serif;font-size:12px;letter-spacing:0.36em;text-transform:uppercase;color:#fff;text-shadow:0 1px 12px rgba(38,24,13,.5);">Filosofie</span>
       </div>
@@ -371,7 +376,7 @@
     </div>
     <!-- Slide 3 -->
     <div class="slide-text inactive" id="slide-txt-2">
-      <div style="display:flex;align-items:center;gap:14px;margin-bottom:clamp(20px,3svh,30px);">
+      <div class="slide-eyebrow" style="display:flex;align-items:center;gap:14px;margin-bottom:clamp(20px,3svh,30px);">
         <span style="width:46px;height:1px;background:rgba(255,255,255,.75);"></span>
         <span style="font-family:'Jost',sans-serif;font-size:12px;letter-spacing:0.36em;text-transform:uppercase;color:#fff;text-shadow:0 1px 12px rgba(38,24,13,.5);">Materie &amp; memorie</span>
       </div>
